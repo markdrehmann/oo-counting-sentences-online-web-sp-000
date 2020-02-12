@@ -15,9 +15,8 @@ class String
   end
 
   def count_sentences
-    array = self.split(/[.?!]/)
-    new_array = array.reject { |element| element == "" }
-    new_array.count
+    array = self.split(/[.?!]/).reject { |element| element == "" }
+    array.count
   end
 
 end
